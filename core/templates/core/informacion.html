@@ -1,10 +1,128 @@
 {% extends 'core/base.html' %}
 {% block content  %}
-<h1>Inicio</h1>
-    <hr>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut neque ab fugit provident cupiditate. Nostrum, mollitia officiis ratione itaque pariatur inventore delectus earum! Aliquam doloribus blanditiis architecto atque corrupti quod.
-    </p>
-    <hr>
+<h1>Información sobre Tibia</h1>
+<hr>
 
+<div class="row">
+    <div class="col-md-8">
+        <h3>Vocaciones</h3>
+        <p>
+            En Tibia, los jugadores pueden elegir entre cuatro vocaciones principales, cada una con habilidades y características únicas:
+        </p>
+        
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Caballero</h5>
+                        <p class="card-text">Especialistas en combate cuerpo a cuerpo y con una gran resistencia. Usan armaduras pesadas y armas como espadas, hachas y mazas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Paladín</h5>
+                        <p class="card-text">Expertos en el uso de armas a distancia, especialmente arcos y flechas. También tienen habilidades de curación y pueden usar armaduras medianas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Mago</h5>
+                        <p class="card-text">Maestros de las artes arcanas, capaces de lanzar poderosos hechizos ofensivos. Usan armaduras ligeras y se especializan en el daño mágico.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Druida</h5>
+                        <p class="card-text">Especialistas en hechizos de curación y protección, así como en magia de naturaleza. Pueden convocar criaturas y controlar los elementos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h3>Habilidades</h3>
+        <p>
+            Los personajes en Tibia desarrollan diversas habilidades a medida que ganan experiencia:
+        </p>
+        <ul>
+            <li><strong>Nivel:</strong> Determina la salud, mana y capacidad general del personaje.</li>
+            <li><strong>Magic Level:</strong> Habilidad en el uso de la magia.</li>
+            <li><strong>Fist Fighting:</strong> Habilidad en el combate con puños.</li>
+            <li><strong>Club Fighting:</strong> Habilidad con mazas y manguales.</li>
+            <li><strong>Sword Fighting:</strong> Habilidad con espadas.</li>
+            <li><strong>Axe Fighting:</strong> Habilidad con hachas.</li>
+            <li><strong>Distance Fighting:</strong> Habilidad con armas a distancia.</li>
+            <li><strong>Shielding:</strong> Habilidad para bloquear ataques con escudo.</li>
+        </ul>
+        
+        <h3>Ciudades Principales</h3>
+        <p>
+            El mundo de Tibia cuenta con varias ciudades, cada una con su propia cultura y características:
+        </p>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Thais</h5>
+                        <p class="card-text">La capital del reino, conocida por su gran mercado y su imponente castillo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Carlin</h5>
+                        <p class="card-text">La ciudad de las mujeres, gobernada por una reina y conocida por su independencia.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Venore</h5>
+                        <p class="card-text">Centro comercial del reino, construida sobre pantanos y conocida por su riqueza.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Darashia</h5>
+                        <p class="card-text">Ciudad del desierto, habitada por seres exóticos y conocida por su arquitectura única.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="sidebar">
+            <h4>Tips para Principiantes</h4>
+            <ul>
+                <li>Elige una vocación que se adapte a tu estilo de juego</li>
+                <li>Comienza cazando criaturas débiles cerca de la ciudad</li>
+                <li>Únete a una guild para recibir ayuda y consejos</li>
+                <li>Explora diferentes áreas para descubrir tesoros ocultos</li>
+                <li>Participa en eventos para obtener objetos exclusivos</li>
+            </ul>
+            
+            <h4>Enlaces Útiles</h4>
+            <ul class="list-unstyled">
+                <li><a href="https://www.tibia.com" target="_blank">Sitio Oficial de Tibia</a></li>
+                <li><a href="https://www.tibiawiki.com.br" target="_blank">Tibia Wiki (Español)</a></li>
+                <li><a href="https://tibia.fandom.com" target="_blank">Tibia Fandom (Inglés)</a></li>
+            </ul>
+            
+            <h4>Estadísticas</h4>
+            <p>Más de 500,000 cuentas activas</p>
+            <p>Más de 100 servidores disponibles</p>
+            <p>Jugadores de más de 100 países</p>
+        </div>
+    </div>
+</div>
 {% endblock %}

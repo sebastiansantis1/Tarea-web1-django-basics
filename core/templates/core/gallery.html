@@ -1,24 +1,78 @@
 {% extends 'core/base.html' %}
 {% block content  %}
-<h1>Galeria</h1>
-    <hr>
-    <p>Nuestra Galeria de Imagenes</p>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut neque ab fugit provident cupiditate. Nostrum, mollitia officiis ratione itaque pariatur inventore delectus earum! Aliquam doloribus blanditiis architecto atque corrupti quod.
-    </p>
-    <hr>
-    
+<h1>Galería de Tibia</h1>
+<hr>
+<p>Explora nuestra colección de imágenes del mundo de Tibia</p>
 
-<div class="card" style="width: 18rem;">
-  <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/f0/f8/f0f88eeaae651f6e3a00cb334f532d6e.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Dark Souls</h5>
-    <p class="card-text">El no muerto elegido,enciende
-        el Ascua </p>
-    <a href="#" class="btn btn-primary">Comprar</a>
-  </div>
+<div id="tibiaCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#tibiaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#tibiaCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#tibiaCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://www.tibiawiki.com.br/images/2/24/Ruas_de_Thais.jpg" class="d-block w-100" alt="Ciudad de Thais">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Ciudad de Thais</h5>
+                <p>La capital del reino de Tibia</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.tibiawiki.com.br/images/9/93/Ruas_de_Carlin.png" class="d-block w-100" alt="Ciudad de Carlin">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Ciudad de Carlin</h5>
+                <p>Conocida como la ciudad de las mujeres</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://static.wikia.nocookie.net/tibia/images/f/fd/Darashia_Dragon_Lair_Map.png/revision/latest?cb=20090831153816&path-prefix=en" class="d-block w-100" alt="Guarida de Dragones">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Guarida de Dragones</h5>
+                <p>Uno de los lugares más peligrosos de Tibia</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#tibiaCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#tibiaCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
 </div>
 
-
-
+<div class="row">
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="https://static.wikia.nocookie.net/tibia/images/9/97/Dragon_Lord.gif/revision/latest/thumbnail/width/360/height/360?cb=20150418105002&path-prefix=en" class="card-img-top" alt="Dragon Lord">
+            <div class="card-body">
+                <h5 class="card-title">Dragon Lord</h5>
+                <p class="card-text">Una de las criaturas más temidas de Tibia</p>
+                <a href="#" class="btn btn-primary">Ver detalles</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="https://static.wikia.nocookie.net/tibia/images/7/75/Demon.gif/revision/latest/thumbnail/width/360/height/360?cb=20150414134039&path-prefix=en" class="card-img-top" alt="Demon">
+            <div class="card-body">
+                <h5 class="card-title">Demon</h5>
+                <p class="card-text">Una criatura poderosa que habita en las profundidades</p>
+                <a href="#" class="btn btn-primary">Ver detalles</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="https://static.wikia.nocookie.net/tibia/images/7/70/Behemoth.gif/revision/latest/thumbnail/width/360/height/360?cb=20210420143709&path-prefix=en" class="card-img-top" alt="Behemoth">
+            <div class="card-body">
+                <h5 class="card-title">Behemoth</h5>
+                <p class="card-text">Un gigante con una fuerza descomunal</p>
+                <a href="#" class="btn btn-primary">Ver detalles</a>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
